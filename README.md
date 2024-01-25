@@ -14,7 +14,10 @@ Für den Aufbau habe ich drei normale Knöpfe an GPIO-Pins angeschlossen und die
 
 # Arbeitsschritte
 
-Als erstes habe ich die drei Knöpfe an den Mikrocontroller angeschlossen. Danach habe ich mir einen Lautsprecher gekauft und ihn an einen Pin und Ground angeschlossen. Jetzt musste ich nur noch den Code programmieren. Für die Töne musste ich eine Tondauer und eine Pause berechnen, je nachdem wie schnell es im Moment ist. Diese Schläge pro Minute habe ich je nach dem welcher Knopf gedrückt wird angepasst. Die Töne sind alle C Noten in einem Array. Wenn der Notenbutton gedrückt wird, wird der Index des Arrays erhöht. Wenn ich bei der letzten Stelle im Array bin, wird zuerst nichts abgespielt und danach wieder von vorne begonnen. 
+Als erstes habe ich die drei Knöpfe an den Mikrocontroller angeschlossen. Danach habe ich mir einen Lautsprecher gekauft und ihn an einen Pin und Ground angeschlossen. Hier habe ich meinen Schaltplan in Wokwi gezeichnet.
+![grafik](https://github.com/schlad3k/Metronom/assets/131366006/f7c69a76-698e-4953-8c2e-a573f6d8c635)
+
+Jetzt musste ich nur noch den Code programmieren. Für die Töne musste ich eine Tondauer und eine Pause berechnen, je nachdem wie schnell es im Moment ist. Diese Schläge pro Minute habe ich je nach dem welcher Knopf gedrückt wird angepasst. Die Töne sind alle C Noten in einem Array. Wenn der Notenbutton gedrückt wird, wird der Index des Arrays erhöht. Wenn ich bei der letzten Stelle im Array bin, wird zuerst nichts abgespielt und danach wieder von vorne begonnen. 
 
 ```cpp
 #include <Notes.h> 
